@@ -1,178 +1,89 @@
 body {
-    background-image: url(assets/gradient\ 1.png);
     overflow-x: hidden;
-}
-
-.carousel-item {
-    height: 100vh;
-    min-height:300px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
-.carousel-caption{
-    bottom: 120px;
-}
-.carousel-caption h5{
-    font-size:40px;
-    color: #F1C40F;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 100px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-.navbar-nav a{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
-    background-color: rgba(52, 73, 94, 0.8);
-    
-}
-.navbar-light .navbar-brand{
-    color: #F1C40F;
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-    background-color: rgba(52, 73, 94, 0.8);
-    
-    
-}
-/* Home text */
-.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navabr-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link{
-    color:#F1C40F; 
-
-}
-/* About, portfolio text */
-.navbar-light .navbar-nav .nav-link{
-    color: #F1C40F;
-}
-.navbar-nav{
-    text-align: center;
-}
-nav-link{
-    padding: 3px;
-}
-
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color:#F1C40F;
-}
-
-.w-100{
-    height:100vh
-}
-
-.navbar-toggler{
-        padding: 1px 5px;
-        font-size: 18px;
-        line-height: 0.3;
-        background: #F1c40F;
-    }
-
-    /*About Section */
-
- 
- .aboutSec{
-    height:40px;
-    margin-top:-20px;
-    background-color: #FFE4E1;
-} 
-.card1{
+  }
+  
+  
+  .jumbotron{
+   background-image: radial-gradient(
+       rgba(45, 43, 175, 0),
+       rgba(44, 24, 131, 0.25),
+       rgba(20, 18, 161, 0.25),
+       rgba(21, 8, 131, 0.25),
+       rgba(0,0,0,0)
+   ),
+   url('assets/nyc.jpg');
+      color: white;  
+      background-size: cover;
+      height: 100vh;
+  }
+  
+  .card {
+   position: relative;
+   top:-300px;
+   left:550px;
+   height:250px;
+  
+  }
+  
+  .fluid-image{
     position: relative;
-    margin-left:400px;
-}
-
-
-    /* Portfolio Section */
-    img{
-        background-size: cover;
-    }
-
-.card{
-    margin-top:60px;
-    margin-left: 100px;
-    border: none;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 5px 5px 12px #000033;
-    transition: 0.8s ease;
-    cursor: pointer;
-}
-
-.card:hover {
-    transform: scale(1.2);
-    box-shadow: 5px 5px 12px #0d0d99;
-}
-
-.card-title{
-    color:#483D8B;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: bold;
-}
-
-.portDiv{
-  height:40px;
-  margin-top: -20px;
-  background-color: #FFE4E1;
-}
-
-h3{
-    text-align: center;
-    margin-top: 20px;
-    margin-left: -30px;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: bold;
-    color: #F1C40F;
-    text-transform: uppercase;
-}
-
-section{
-    background-image: url(assets/gradient\ 1.png);
-    background-size: cover;
-    
-}
-
-/* Contact Section */
-
-.contDiv{  
-    background-color: #FFE4E1;
-    height:40px;
-    margin-top:-20px;
-
-}
-
-form{
- width:250px;
- height:100px;
- position: absolute;
- margin-top: 20px;
- margin-left: 600px;
-    
-}
-
-
-button {
-    margin-top:0px;
-    margin-left: 100px;
-}
-
-.footer{
-    width:100px;
-    height:200px;
-}
-.myLinks{
-    background-color: #FFE4E1;
-    height:40px;
+    top:100px;
+    left:300px;
+  }
+  
+  .bground1 {
+    position:relative;
+    width: 100%;
+    height:400px;
+    background: #E8EAF6 ;
+  }
+  
+  .bground2 {
     position: relative;
-    margin-top: 200px;
-    margin-left: -20px;
-}
-
-.fab,.far{
+    width:100%;
+    height:400px;
+    background: #9FA8DA ;
+  }
+  
+  .bground2::before {
+    content:"";
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: -48px;
+    left: 0;
+    background: #9FA8DA;
+    transform: skewY(2deg);
+  }
+  
+  .bground2::before {
+    content:"";
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: -48px;
+    right: 0;
+    background: #9FA8DA;
+    transform: skewY(-2deg);
+  }
+  
+  .card1{
     position: relative;
-    margin-top: 20px;
-   margin-left:250px;
- 
-
-}
+    top:0;
+    left:15px;
+  }
+  
+  h2{
+    position: relative;
+    top:0px;
+    left:15px;
+  }
+  
+  .contact{
+    position: relative;
+    top:0px;
+    left:20px;
+    width:50%;
+  }
+  
+  

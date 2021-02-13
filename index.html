@@ -1,219 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erika's Webpage</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <link ref="text/css" rel="stylesheet" href="style.css">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erika's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link ref="text/css" rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- Landing Page & Nav Bar -->
+  <!--Navbar-->
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-        <a class="navbar-brand" href="#">Erika Johnson</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-          </ul>
-         </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Erika Johnson</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <div class="jumbotron bg-light jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Welcome!</h1>
+      <p class="lead"></p>
+    </div>
+  </div>
 
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <!--About-->
 
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/Rochester_NY_Skyline.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class ="animated">Web Developer</h5>    
-            </div>
-          </div>
-          </div>
-        </div>
+  <h2 id="about">About Me</h2>
+  <section class="bground1">
+    <div class="profile">
+      <img src="assets/Erika.png" class="fluid-image" alt="profile image" style="width:250px;height:250px;">
+    </div>
+  </section>
 
-
-
-        <!--About Section-->
-
-        <div class = "aboutSec">
-          <h3 id = "about">About</h3>
-        </div>
-
-
-
-        <div class="card1 mb-3" style="max-width: 540px;">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <img src="assets/Erika.png" class="card-img" alt="Headshot">
-            </div>
-            <div class="col-md-8">
-              <div class="cardBody1">
-                <h5 class="cardTitle1"></h5>
-                <p class="cardText1">Born and raised in Rochester, NY I received my bachelors degree in graphic design. I moved to Indiana June 2018, but haven’t had any luck in securing a job as a graphic designer. In June 2020, as I scrolled through my LinkedIn newsfeed I saw an ad for a coding bootcamp based here in Indianapolis. I visited the website and decided why not gain more knowledge as a designer and perhaps change my career focus into the world of tech, as a web developer. I made the decision of enrolling into Eleven Fifty Academy’s six month web development program. So far, it has been the best, challenging decision I have made in my life. I graduate in February 2021 and will officially be a web developer. As my journey will come to an end with Eleven Fifty Academy, a new one will appear for me, to start my career as a web developer.</p>
-              </div>
-            </div>
+  <section class='bground2'>
+    <div class="card mb-3" style="max-width: 580px;">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Who is Erika?</h5>
+            <p class="card-text"> A web developer and graphic designer from Rochester, NY, currently residing in the
+              Indianapolis area. I recently graduated from the web development course at Eleven Fifty Academy. Now I'm
+              ready to take the next step in my journey.</p>
+              <a href = "https://github.com/Erika-tech257" target="blank">
+              <i class="fab fa-github fa-2x"></i></a>
+              <a href = "https://www.linkedin.com/in/erikajohnsontech/" target="blank">
+                <i class="fab fa-linkedin fa-2x"></i></a>
+                <a href = "assets/Resume (2).pdf" target="blank">
+                  <i class="far fa-file fa-2x"></i>resume</a>
           </div>
         </div>
-       
-     
-        <!-- Project Section -->
-             
-<div class = "portDiv">
-  <h3 id = "portfolio">Portfolio</h3>
-   </div>
-   <section>
-        <div class="row row-cols-1 row-cols-md-3">
-          <div class="col mb-4">
-            <div class="card h-80 w-50">
-              <a href = " https://erika-tech257.github.io/huluStaticLayout/" target="blank">
-              <img src="assets/Hulu1.png" class="card-img-top" alt="Re-creation of Hulu website"></a>
-              <div class="card-body">
-                <h5 class="card-title">Static Layout Application</h5>
-                <p class="card-text">A re-creation of Hulu's website (Two view lengths).</p>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card h-80 w-50">
-              <a href ="https://codepen.io/erika-tech257/pen/QWNyNJX" target="blank">
-              <img src="assets/creature.png" class="card-img-top" alt="A creature created in CSS"></a>
-              <div class="card-body">
-                <h5 class="card-title">Creature Assignment</h5>
-                <p class="card-text">A creature strictly created in CSS.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card h-80 w-50">
-              <a href ="https://erika-tech257.github.io/Pokemon-API/" target="blank">
-              <img src="assets/Pokemon1.png" class="card-img-top" alt="Pokemon API"></a>
-              <div class="card-body">
-                <h5 class="card-title">API Project #1</h5>
-                <p class="card-text">A pokemon inspired website created by pulling information from an api website, utilizing GET.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card h-80 w-50">
-              <a href ="https://ejholidayapi2.web.app/" target="blank">
-              <img src="assets/holiday1.png" class="card-img-top" alt="Holiday API"></a>
-              <div class="card-body">
-                <h5 class="card-title">API Project #2</h5>
-                <p class="card-text">A holiday api website displaying various holidays celebrated in New York State, utilizing GET.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card h-80 w-50">
-              <img src="assets/coming-soon-2550190_1280.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Blue Badge</h5>
-                <p class="card-text">Coming Soon</p>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card h-80 w-50">
-              <img src="assets/coming-soon-2550190_1280.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Red Badge</h5>
-                <p class="card-text">Coming Soon</p>
-              </div>
-            </div>
+      </div>
+    </div>
+ 
+
+    <!--Project Section-->
+    <h2 id="projects">Projects</h2>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card1">
+          <img src="assets/creature.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"> <a href="https://codepen.io/erika-tech257/pen/QWNyNJX" target="blank">CSS
+                Creature</a></h5>
+            <p class="card-text">Created a creature in codepen, only utilizing HTML5 and CSS.</p>
           </div>
         </div>
-      </section>
-      
-
-        <!---Contact Section-->
-
-        <div class = "contDiv">
-          <h3 id = "contact">Contact</h3>
+      </div>
+      <div class="col">
+        <div class="card1">
+          <img src="assets/Hulu1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><a href=" https://erika-tech257.github.io/huluStaticLayout/" target="blank">Static
+                Layout Webpage</a></h5>
+            <p class="card-text">Recreated Hulu’s website (two times the view-height), strictly using HTML5 and CSS.
+              Deployed to GitHub.</p>
           </div>
-           
-         
-     <form action = "https://formspree.io/f/mqkgaoyk" method="post">
-         <label>
-            Email:
-            <input type="text" name="_replyto">
-          </label>
-         
-          <label>
-            Message:
-            <textarea name="message"></textarea>
-          </label>
-        
-          <label>
-            Name:
-            <input type="text" name="name">
-          </label>
-        
-          <button type="submit">Send</button>
-        </form>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card1">
+          <img src="assets/Pokemon1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://erika-tech257.github.io/Pokemon-API/" target="blank">Pokemon API</a>
+            </h5>
+            <p class="card-text">Utilized PokeAPI, HTML5, CSS and JavaScript to create Pokemon cards, displaying
+              different pokemon and their attack moves. Deployed to GitHub.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card1">
+          <img src="assets/holiday1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://ejholidayapi2.web.app/" target="blank">Calendar API</a></h5>
+            <p class="card-text">Utilized Calendar Index API, HTML5, CSS and JavaScript to display different holidays
+              celebrated within the United States. The pictures located at the top of the cards link to a website
+              discussing the importance of that particular holiday.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card1">
+          <img src="assets/Ballr.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://ballrclient.herokuapp.com/" target="blank">BALLR APP</a></h5>
+            <p class="card-text">Worked within a group setting to create a full stack application. The BALLR application
+              allows a user to signup/login, create an event, delete/edit an event and signup for an event another user
+              created. Utilizing (PERN) PostgreSql, Express, React and Node to set up the server and client side of the
+              application. Reactstrap was used to style the website and deployed with Heroku.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card1">
+          <img src="assets/HomePaws.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://ej-pawappclient.herokuapp.com/" target="blank">Home Bound Paws
+                App</a></h5>
+            <p class="card-text">Created a full stack application utilizing (PERN) PostgreSql, Express, React and Node.
+              Styled the application with material-ui and implemented TypeScript. The idea for this application is to
+              allow users to create a post about missing or stray pets and leave comments under specific posts. The goal
+              is to reunite lost pets and help stray pets get adopted. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
 
-        <!---Icon Links-->
-
-        <footer>
-     <div class = "myLinks">
-       <h3>Links</h3></div>
-
-      <a href = "https://github.com/Erika-tech257" target="blank">
-       <i class="fab fa-github fa-3x"></i></a>
-
-      <a href = "https://codepen.io/erika-tech257" target="blank">
-       <i class="fab fa-codepen fa-3x"></i></a>
-
-       <a href = "https://www.linkedin.com/in/erika-johnson-8b6603133/" target="blank">
-       <i class="fab fa-linkedin fa-3x"></i></a>
-
-       <a href = "assets/graphic design resume 2020.pdf" target="blank">
-       <i class="far fa-file fa-2x">resume</i> </a>
-     
-       </footer>
-        
-      
-
-
-
+    <!--Contact-->
+    <h2 id="contact">Contact</h2>
+    <form action="https://formspree.io/f/mqkgaoyk" method="post">
+      <div class="contact">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" name="_replyto" class="form-control" id="exampleFormControlInput1"
+            placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Name</label>
+          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </div>
+    </form>
+    <br>
+  </section>
 
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/5a10bf41dc.js" crossorigin="anonymous"></script>
 
-
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</script>
-<script src="https://kit.fontawesome.com/5a10bf41dc.js" crossorigin="anonymous"></script>
-    
 </body>
+
 </html>
