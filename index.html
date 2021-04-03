@@ -53,7 +53,8 @@
           <h6>Who is Erika?</h6>
         </div>
         <p>
-          A creative from Rochester, NY, currently residing in the Indianapolis area. I recently graduated from the web development course at Eleven Fifty Academy. Now I'm
+          A creative from Rochester, NY, currently residing in the Indianapolis area. I recently graduated from the web
+          development course at Eleven Fifty Academy. Now I'm
           ready to take the next step in my journey.
         </p>
       </div>
@@ -73,7 +74,7 @@
             <a href="#" class="icon-link">
               <i class="far fa-file-pdf"></i>
             </a>
-          </li>    
+          </li>
         </ul>
       </div>
     </div>
@@ -84,9 +85,94 @@
       <div class="section-heading">
         <h1>Portfolio</h1>
         <h6>Check out some of my work</h6>
-       </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-img">
+          <img src="assets/holiday1.png" alt="">
+        </div>
+        <div class="portfolio-description">
+          <h6>Web Development</h6>
+          <h1>Calendar API</h1>
+          <p>
+            Utilized Calendar Index API, HTML5, CSS and JavaScript to display different holidays celebrated within the
+            United States. The pictures located at the top of the cards link to a website discussing the importance of
+            that particular holiday.
+          </p>
+          <a href="https://ejholidayapi2.web.app/" target="blank" class="cta">View Project</a>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-img">
+          <img src="" alt="">
+        </div>
+        <div class="portfolio-description">
+          <h6>Web Development</h6>
+          <h1>Pokemon API</h1>
+          <p>
+            A React application that allows you to search a pokemon name, results display information about that
+            particular pokemon.
+          </p>
+            <a href="#" target="blank" class="cta">View Project</a>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-img">
+          <img src="assets/Ballr.png" alt="">
+        </div>
+        <div class="portfolio-description">
+          <h6>Web Development</h6>
+          <h1>BALLR APP</h1>
+          <p>
+            Worked within a group setting to create a full stack application. The BALLR application
+            allows a user to signup/login, create an event, delete/edit an event and signup for an event another user
+            created. Utilizing (PERN) PostgreSql, Express, React and Node to set up the server and client side of the
+            application. Reactstrap was used to style the website and deployed with Heroku.
+          </p>
+            <a href="https://ballrclient.herokuapp.com/" target="blank" class="cta">View Project</a>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-img">
+          <img src="assets/HomePaws.png" alt="">
+        </div>
+        <div class="portfolio-description">
+          <h6>Web Development</h6>
+          <h1>Home Bound Paws</h1>
+          <p>
+            A full stack application utilizing (PERN) PostgreSql, Express, React and Node.
+            Styled the application with material-ui and implemented TypeScript. The idea for this application is to
+            allow users to create a post about missing or stray pets and leave comments under specific posts. The goal
+            is to reunite lost pets and help stray pets get adopted.
+          </p>
+            <a href="https://ej-pawappclient.herokuapp.com/" target="blank" class="cta">View Project</a>
+        </div>
+      </div>
     </div>
   </section>
+  <!--Contact-->
+  <section class="contact">
+    <div class="container">
+      <div class="section-heading">
+        <h1>Contact</h1>
+        <h6>Connect with me</h6>
+      </div>
+      <form action="https://formspree.io/f/mqkgaoyk" method="post">
+          <label for="name">Name:</label>
+          <input name="name" id="name" type="text" placeholder="Enter your name..." required>
+          <label for="name">Email:</label>
+          <input name="email" id="email" type="email" placeholder="Enter your email..." required>
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" cols="10" rows="10"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+    </div>
+  </section>
+  <footer class="copyright">
+    <div class="up" id="up">
+      <i class="fas fa-chevron-up"></i>
+      <p>&copy; 2021 Erika Johnson</p>
+    </div>
+  </footer>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -94,5 +180,4 @@
   <script src="portfolio.js"></script>
 
 </body>
-
 </html>
