@@ -6,186 +6,92 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Erika's Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link ref="text/css" rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-  <!--Navbar-->
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Erika Johnson</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+  <!--NavBar/Header-->
+  <header>
+    <div class="menu-toggler">
+      <div class="bar half start"></div>
+      <div class="bar"></div>
+      <div class="bar half end"></div>
+    </div>
+    <nav class="top-nav">
+      <ul class="nav-list">
+        <li>
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="landing-text">
+      <h1>Erika Johnson</h1>
+      <h6>Graphic Designer & Web Developer</h6>
+    </div>
+  </header>
+  <!--About Section-->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="profile-img">
+        <img src="assets/Erika.png" alt="">
+      </div>
+      <div class="about-details">
+        <div class="about-heading">
+          <h1>About</h1>
+          <h6>Who is Erika?</h6>
+        </div>
+        <p>
+          A creative from Rochester, NY, currently residing in the Indianapolis area. I recently graduated from the web development course at Eleven Fifty Academy. Now I'm
+          ready to take the next step in my journey.
+        </p>
+      </div>
+      <div class="social-media">
+        <ul class="nav-list">
+          <li>
+            <a href="#" class="icon-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#about">About</a>
+          <li>
+            <a href="#" class="icon-link">
+              <i class="fab fa-github-square"></i>
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
-          </li>
+          <li>
+            <a href="#" class="icon-link">
+              <i class="far fa-file-pdf"></i>
+            </a>
+          </li>    
         </ul>
       </div>
     </div>
-  </nav>
-
-  <div class="jumbotron bg-light jumbotron-fluid">
+  </section>
+  <!--Portfolio-->
+  <section class="portfolio" id="portfolio">
     <div class="container">
-      <h1 class="display-4">Welcome!</h1>
-      <p class="lead"></p>
-    </div>
-  </div>
-
-  <!--About-->
-
-  <h2 id="about">About Me</h2>
-  <section class="bground1">
-    <div class="profile">
-      <img src="assets/Erika.png" class="fluid-image" alt="profile image" style="width:250px;height:250px;">
+      <div class="section-heading">
+        <h1>Portfolio</h1>
+        <h6>Check out some of my work</h6>
+       </div>
     </div>
   </section>
 
-  <section class='bground2'>
-    <div class="card mb-3" style="max-width: 580px;">
-      <div class="row g-0">
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Who is Erika?</h5>
-            <p class="card-text"> A web developer and graphic designer from Rochester, NY, currently residing in the
-              Indianapolis area. I recently graduated from the web development course at Eleven Fifty Academy. Now I'm
-              ready to take the next step in my journey.</p>
-              <a href = "https://github.com/Erika-tech257" target="blank">
-              <i class="fab fa-github fa-2x"></i></a>
-              <a href = "https://www.linkedin.com/in/erikajohnsontech/" target="blank">
-                <i class="fab fa-linkedin fa-2x"></i></a>
-                <a href = "assets/Resume (2).pdf" target="blank">
-                  <i class="far fa-file fa-2x"></i>resume</a>
-          </div>
-        </div>
-      </div>
-    </div>
- 
 
-    <!--Project Section-->
-    <h2 id="projects">Projects</h2>
-
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card1">
-          <img src="assets/creature.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"> <a href="https://codepen.io/erika-tech257/pen/QWNyNJX" target="blank">CSS
-                Creature</a></h5>
-            <p class="card-text">Created a creature in codepen, only utilizing HTML5 and CSS.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card1">
-          <img src="assets/Hulu1.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"><a href=" https://erika-tech257.github.io/huluStaticLayout/" target="blank">Static
-                Layout Webpage</a></h5>
-            <p class="card-text">Recreated Hulu’s website (two times the view-height), strictly using HTML5 and CSS.
-              Deployed to GitHub.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card1">
-          <img src="assets/Pokemon1.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"><a href="https://erika-tech257.github.io/Pokemon-API/" target="blank">Pokemon API</a>
-            </h5>
-            <p class="card-text">Utilized PokeAPI, HTML5, CSS and JavaScript to create Pokemon cards, displaying
-              different pokemon and their attack moves. Deployed to GitHub.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <br>
-    <br>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card1">
-          <img src="assets/holiday1.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"><a href="https://ejholidayapi2.web.app/" target="blank">Calendar API</a></h5>
-            <p class="card-text">Utilized Calendar Index API, HTML5, CSS and JavaScript to display different holidays
-              celebrated within the United States. The pictures located at the top of the cards link to a website
-              discussing the importance of that particular holiday.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card1">
-          <img src="assets/Ballr.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"><a href="https://ballrclient.herokuapp.com/" target="blank">BALLR APP</a></h5>
-            <p class="card-text">Worked within a group setting to create a full stack application. The BALLR application
-              allows a user to signup/login, create an event, delete/edit an event and signup for an event another user
-              created. Utilizing (PERN) PostgreSql, Express, React and Node to set up the server and client side of the
-              application. Reactstrap was used to style the website and deployed with Heroku.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card1">
-          <img src="assets/HomePaws.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"><a href="https://ej-pawappclient.herokuapp.com/" target="blank">Home Bound Paws
-                App</a></h5>
-            <p class="card-text">Created a full stack application utilizing (PERN) PostgreSql, Express, React and Node.
-              Styled the application with material-ui and implemented TypeScript. The idea for this application is to
-              allow users to create a post about missing or stray pets and leave comments under specific posts. The goal
-              is to reunite lost pets and help stray pets get adopted. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-    <!--Contact-->
-    <h2 id="contact">Contact</h2>
-    <form action="https://formspree.io/f/mqkgaoyk" method="post">
-      <div class="contact">
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Email address</label>
-          <input type="email" name="_replyto" class="form-control" id="exampleFormControlInput1"
-            placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Name</label>
-          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send</button>
-      </div>
-    </form>
-    <br>
-  </section>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/5a10bf41dc.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="portfolio.js"></script>
 
 </body>
 
