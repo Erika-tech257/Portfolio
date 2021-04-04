@@ -47,6 +47,7 @@ header{
   height: 100vh;
   position: fixed;
   top: -100vh;
+  z-index: 50;
   background-color: #16162d;
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
@@ -67,14 +68,16 @@ li{
 }
 
 .nav-link{
-  font-family:sans-serif;
+  font-family:'Kaushan Script', cursive;
   font-size: 5rem;
   padding: 1rem;
 }
 
 .nav-link:hover,
 .nav-link:focus{
-  background: linear-gradient(to top, #0BF4EE,#177BBA);
+  background: linear-gradient(to top, #CB0BF4
+
+  ,#177BBA);
   background-clip: text;
   -webkit-background-clip:text;
   -webkit-text-fill-color: transparent;
@@ -105,7 +108,8 @@ li{
 }
 /* bar = menu toggler */
 .bar{
-  background: linear-gradient(to right, #0BF4EE,#177BBA);
+  background: linear-gradient(to right, #CB0BF4
+  ,#177BBA);
   width: 100%;
   height: 8px;
   border-radius: .4rem;
@@ -133,6 +137,33 @@ li{
 
 .open .bar.end{
   transform: rotate(-450deg) translateX(-.8rem);
+}
+
+.landing-text{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.landing-text h1{
+font-size: 20rem;
+font-family: 'Kaushan Script', cursive;
+background: linear-gradient(to top, #CB0BF4
+,#177BBA);
+background-clip: text;
+-webkit-background-clip:text;
+-webkit-text-fill-color: transparent;
+padding: 1 rem;
+user-select: none;
+}
+
+.landing-text h6{
+  font-size: 2rem;
+  font-weight: 300;
 }
 /*End header*/
 
