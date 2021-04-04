@@ -157,15 +157,15 @@ background: linear-gradient(to top, #CB0BF4
 background-clip: text;
 -webkit-background-clip:text;
 -webkit-text-fill-color: transparent;
-padding: 1 rem;
+padding: 1rem;
 user-select: none;
-z-index: 1;
+
 }
 
-/* .landing-text h6{
+.landing-text h6{
   font-size: 2rem;
   font-weight: 300;
-} */
+}
 /*End header*/
 
 /*Start about*/
