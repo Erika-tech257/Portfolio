@@ -159,6 +159,7 @@ background-clip: text;
 -webkit-text-fill-color: transparent;
 padding: 1 rem;
 user-select: none;
+z-index: 1;
 }
 
 .landing-text h6{
